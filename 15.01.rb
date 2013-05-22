@@ -2,9 +2,10 @@ include Math
 A=3.0
 B=4.0
 C=5.0
-la= (sqrt (A*B*(C+B+A)*(A+B-A)))/(A+B)
-lb= (sqrt (A*B*(A+C+B)*(A+C-B)))/(A+B)
-lc= (sqrt (A*B*(A+B+C)*(A+B-C)))/(A+B)
+P=(A+B+C)/2
+la=(2*sqrt(A*B*P*(P-A)))/(A+B)
+lb=(2*sqrt(A*B*P*(P-B)))/(A+B) 
+lc=(2*sqrt(A*B*P*(P-C)))/(A+B)
 La=eval(sprintf("%8.2f",la))
 Lb=eval(sprintf("%8.2f",lb))
 Lc=eval(sprintf("%8.2f",lc))
@@ -16,4 +17,6 @@ puts La, Lb, Lc
 Исходные данные взять из контрольного примера.
 Контрольный пример: a=3, b=4, c=5. Результат: la=4.22, lb=3.35,
 lc=2.42.
+
+ФОРМУЛА С ПОЛУПЕРИМЕТРАМИ
 =end
