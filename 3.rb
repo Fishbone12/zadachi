@@ -1,8 +1,16 @@
+def volume_of_cube(a)
+  a**3
+end
+
+def surface_area(a)
+   6*a**2
+end
+
+def side_surface_area(a)
+  a**2
+end
 a=5
-v=a**3
-surface_area=6*a**2
-side_surface_area=a**2
-puts v, surface_area, side_surface_area
+puts volume_of_cube(a), surface_area(a), side_surface_area(a)
 =begin mistake in task book, because S != 100
 Дана длина ребра куба. Вычислить объем куба и площадь его боковой
 поверхности. Данные взять из контрольного примера.

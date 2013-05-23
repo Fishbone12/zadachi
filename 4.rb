@@ -1,9 +1,13 @@
 include Math
-a=4.0
-b=9.0
-Arithmetic_mean=(a+b)/2
-G=sqrt(a*b)
-puts Arithmetic_mean, G
+def arithmetic_mean(a,b)
+  (a+b)/2
+end
+
+def geometric_mean(a,b)
+  sqrt(a*b)
+end
+a, b = 4.0, 9.0
+puts arithmetic_mean(a,b), geometric_mean(a,b)
 
 
 =begin Даны два положительных действительных числа. Найти среднее

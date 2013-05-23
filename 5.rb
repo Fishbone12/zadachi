@@ -1,9 +1,14 @@
 include Math
-a=4
-b=3
-s=(a*b)/2
-g=sqrt(a**2+b**2)
-puts g,s
+def square_of_triangle(a,b)
+  (a*b)/2
+end
+
+def hypotenuse(a,b)
+  sqrt(a**2+b**2)
+end
+a, b = 4, 3
+puts hypotenuse(a,b), square_of_triangle(a,b)
+
 =begin Задача 5.
 Даны катеты прямоугольного треугольника. Найти его гипотенузу и
 площадь. Данные взять из контрольного примера.
