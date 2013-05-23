@@ -1,14 +1,18 @@
 include Math
-A=3.0
-B=4.0
-C=5.0
-la= (sqrt (A*B*(C+B+A)*(A+B-A)))/(A+B)
-lb= (sqrt (A*B*(A+C+B)*(A+C-B)))/(A+B)
-lc= (sqrt (A*B*(A+B+C)*(A+B-C)))/(A+B)
-La=eval(sprintf("%8.2f",la))
-Lb=eval(sprintf("%8.2f",lb))
-Lc=eval(sprintf("%8.2f",lc))
-puts La, Lb, Lc
+def length_of_the_bisector_a(a, b, c)
+  (sqrt (a*b*(c+b+a)*(c+b-a)))/(a+b)
+  eval(sprintf("%8.2f",length_of_the_bisector_a(a, b, c)))
+end
+def length_of_the_bisector_b(a, b, c)
+  (sqrt (a*b*(a+c+b)*(a+c-b)))/(a+b)
+  eval(sprintf("%8.2f",length_of_the_bisector_b(a, b, c)))
+end
+def length_of_the_bisector_c(a, b, c)
+  (sqrt (a*b*(a+b+c)*(a+b-c)))/(a+b)
+  eval(sprintf("%8.2f",length_of_the_bisector_c(a, b, c)))
+end
+a, b, c= 3.0, 4.0, 5.0
+puts length_of_the_bisector_a(a, b, c), length_of_the_bisector_b(a, b, c), length_of_the_bisector_c(a, b, c)
 =begin Задача 15.
 Треугольник задан длинами сторон a, b, c. Найти длины биссектрис.
 Длина биссектрисы, проведенной на сторону a, вычисляется по

@@ -1,9 +1,10 @@
 include Math
-r=20
-R=30
 pi=eval(sprintf("%8.2f",PI))
-S=pi*(R**2 - r**2)
-puts S
+def square_ring(r_ins, r_out, pi)
+  pi*(r_out**2 - r_ins**2)
+end
+r_ins, r_out = 20.0, 30.0
+puts square_ring(r_ins, r_out, pi)
 =begin
 № 11
 Найти площадь кольца, внутренний радиус которого 20, а внешний

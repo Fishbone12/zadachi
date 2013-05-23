@@ -1,11 +1,15 @@
-include Math
-c=5
-a=3
-  b=(a**2-c**2)
-  B=sqrt(b)
-  p=(a+b+c)/2
-  r=sqrt((p-a)*(p-b)*(p-c)/p)
-puts b,r
+def second_cathetus(a, c)
+   Math.sqrt(a**2-c**2)
+end
+def half_perimeter(a, b, c)
+  (a+b+c)/2
+end
+def radius_of_inscribed_circle(a, b, c)
+  p= half_perimeter(a, b, c)
+  Math.sqrt((p-a)*(p-b)*(p-c)/p)
+end
+a, c = 3, 5
+puts second_cathetus(a, c), radius_of_inscribed_circle(a, b, c, p)
 =begin
 Задача 10.
 Даны гипотенуза и катет прямоугольного треугольника. Найти второй

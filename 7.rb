@@ -1,12 +1,13 @@
 include Math
-a=-4.0
-b=-9
+
 def arithmetic_mean(a,b)
  (a+b)/2.0
 end
-puts arithmetic_mean(a,b)
-G=sqrt(a.abs*b.abs)
-puts  G
+def geometric_mean(a,b)
+  sqrt(a.abs*b.abs)
+end
+a, b = -4.0, -9.0
+puts arithmetic_mean(a,b), geometric_mean(a,b)
 =begin Задача 7.
 Даны два действительных числа. Найти среднее арифметическое и
 среднее геометрическое их модулей. Данные взять из контрольного

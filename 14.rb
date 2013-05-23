@@ -1,13 +1,17 @@
 include Math
-A=3.0
-B=4.0
-C=5.0
-ma=(sqrt(2*(B**2 + C**2)-A**2))/2
-mb=(sqrt(2*(A**2 + C**2)-B**2))/2
-mc=(sqrt(2*(A**2 + B**2)-C**2))/2
-Ma=eval(sprintf("%8.2f",ma))
-Mb=eval(sprintf("%8.2f",mb))
-puts Ma, Mb, mc
+def median_length_a(a, b, c)
+  (sqrt(2*(b**2 + c**2)-a**2))/2
+  eval(sprintf("%8.2f",median_length_a(a, b, c)))
+end
+def median_length_b(a, b, c)
+  (sqrt(2*(a**2 + c**2)-b**2))/2
+  eval(sprintf("%8.2f",median_length_b(a, b, c)))
+end
+def median_length_c(a, b, c)
+  (sqrt(2*(a**2 + b**2)-c**2))/2
+end
+a, b, c= 3.0, 4.0, 5.0
+puts median_length_a(a, b, c), median_length_b(a, b, c), median_length_c(a, b, c)
 =begin Задача 14.
 Треугольник задан длинами сторон a, b, c. Найти длины медиан.
 Длина медианы, проведенной на сторону a, вычисляется по формуле:

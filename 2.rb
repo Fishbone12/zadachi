@@ -11,8 +11,10 @@ end
 def square_of_cone(r1, r2, h, pi)
   l= generatrix_of_truncated_cone(r1, r2, h) 
   pi*l*(r1+r2)+pi*(r1**2+r2**2)
+  eval(sprintf("%8.2f",square_of_cone(r1, r2, h, pi))) 
 end
-eval(sprintf("%8.2f",square_of_cone(r1, r2, h, pi)))
+
+
 r1, r2, h = 20, 10, 30
 
 puts square_of_cone(r1, r2, h, pi), volume_of_cone(r1, r2, h, pi)

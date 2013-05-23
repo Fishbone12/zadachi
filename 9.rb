@@ -1,10 +1,15 @@
 include Math
-L=6
 pi=eval(sprintf("%8.2f",PI))
-R=L/2/pi
-S=pi*R**2
-s=eval(sprintf("%8.6f",S))
-puts s
+def  radius(l, pi)
+  l/2/pi
+end
+def area_of_a_circle(pi, l)
+  r= radius(l, pi)
+  pi*r**2
+  eval(sprintf("%8.6f",area_of_a_circle(pi, l)))
+end
+l= 6
+puts area_of_a_circle(pi, l)
 =begin
 Задача 9.
 По заданной длине окружности L найти площадь круга S,

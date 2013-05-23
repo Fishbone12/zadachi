@@ -1,15 +1,24 @@
 include Math
-A=3.0
-B=4.0
-C=5.0
-P=(A+B+C)/2
-la=(2*sqrt(A*B*P*(P-A)))/(A+B)
-lb=(2*sqrt(A*B*P*(P-B)))/(A+B) 
-lc=(2*sqrt(A*B*P*(P-C)))/(A+B)
-La=eval(sprintf("%8.2f",la))
-Lb=eval(sprintf("%8.2f",lb))
-Lc=eval(sprintf("%8.2f",lc))
-puts La, Lb, Lc
+def half_perimetr(a, b, c)
+  (a+b+c)/2
+end
+def length_of_the_bisector_a(a, b, c)
+  p= half_perimetr(a, b, c) 
+  (2*sqrt(a*b*p*(p-a)))/(a+b)
+  eval(sprintf("%8.2f",length_of_the_bisector_a(a, b, c)))
+end
+def length_of_the_bisector_b(a, b, c)
+  p= half_perimetr(a, b, c)
+  (2*sqrt(a*b*p*(p-b)))/(a+b)
+  eval(sprintf("%8.2f",length_of_the_bisector_b(a, b, c)))
+end
+def length_of_the_bisector_c(a, b, c)
+p= half_perimetr(a, b, c)
+  (2*sqrt(a*b*p*(p-c)))/(a+b)
+  eval(sprintf("%8.2f",length_of_the_bisector_c(a, b, c)))
+end
+a, b, c = 3.0, 4.0, 5.0
+puts length_of_the_bisector_a(a, b, c), length_of_the_bisector_b(a, b, c), length_of_the_bisector_c(a, b, c)
 =begin Задача 15.
 Треугольник задан длинами сторон a, b, c. Найти длины биссектрис.
 Длина биссектрисы, проведенной на сторону a, вычисляется по
