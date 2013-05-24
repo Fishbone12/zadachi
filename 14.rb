@@ -1,11 +1,11 @@
 include Math
 def median_length_a(a, b, c)
   (sqrt(2*(b**2 + c**2)-a**2))/2
-  eval(sprintf("%8.2f",median_length_a(a, b, c)))
+  sprintf("%0.2f",(sqrt(2*(b**2 + c**2)-a**2))/2)
 end
 def median_length_b(a, b, c)
   (sqrt(2*(a**2 + c**2)-b**2))/2
-  eval(sprintf("%8.2f",median_length_b(a, b, c)))
+  sprintf("%0.2f",(sqrt(2*(a**2 + c**2)-b**2))/2)
 end
 def median_length_c(a, b, c)
   (sqrt(2*(a**2 + b**2)-c**2))/2

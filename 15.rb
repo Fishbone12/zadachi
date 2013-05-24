@@ -1,15 +1,15 @@
 include Math
 def length_of_the_bisector_a(a, b, c)
   (sqrt (a*b*(c+b+a)*(c+b-a)))/(a+b)
-  eval(sprintf("%8.2f",length_of_the_bisector_a(a, b, c)))
+  sprintf("%0.2f",(sqrt (a*b*(c+b+a)*(c+b-a)))/(a+b))
 end
 def length_of_the_bisector_b(a, b, c)
   (sqrt (a*b*(a+c+b)*(a+c-b)))/(a+b)
-  eval(sprintf("%8.2f",length_of_the_bisector_b(a, b, c)))
+  sprintf("%0.2f",(sqrt (a*b*(a+c+b)*(a+c-b)))/(a+b))
 end
 def length_of_the_bisector_c(a, b, c)
   (sqrt (a*b*(a+b+c)*(a+b-c)))/(a+b)
-  eval(sprintf("%8.2f",length_of_the_bisector_c(a, b, c)))
+  sprintf("%0.2f",(sqrt (a*b*(a+b+c)*(a+b-c)))/(a+b))
 end
 a, b, c= 3.0, 4.0, 5.0
 puts length_of_the_bisector_a(a, b, c), length_of_the_bisector_b(a, b, c), length_of_the_bisector_c(a, b, c)

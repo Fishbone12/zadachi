@@ -1,12 +1,12 @@
 include Math
-pi=eval(sprintf("%8.2f",PI))
+pi= sprintf("%0.2f",Math::PI).to_f
 def  radius(l, pi)
   l/2/pi
 end
 def area_of_a_circle(pi, l)
   r= radius(l, pi)
   pi*r**2
-  eval(sprintf("%8.6f",area_of_a_circle(pi, l)))
+  sprintf("%0.6f",pi*r**2)
 end
 l= 6
 puts area_of_a_circle(pi, l)
