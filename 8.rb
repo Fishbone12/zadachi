@@ -1,9 +1,8 @@
-R1=Rational(1,2)
-R2=Rational(1,3)
-R3=Rational(1,8)
-Ro=Rational(1,R1+R2+R3)
-Float#/(Ro)  # я уже 100500 вещей тут перепроболвал - пишет 24/23 и ппц
-puts Ro
+r1=Rational(1,2)
+r2=Rational(1,3)
+r3=Rational(1,8)
+ro=Rational(1,r1+r2+r3)
+puts ro.to_f
 =begin Задача 8.
 Три сопротивления R1, R2, R3 соединены параллельно. Найти
 сопротивление соединения R0 по формуле:
