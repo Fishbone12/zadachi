@@ -17,17 +17,17 @@ elsif x>=0 && y>=0
      if true 
      puts "X is between 0.5 & 2"
      else
-     x = x/10
+     x = x/10  # не выполняет именно это действие
      puts x   # не выполняет именно это действие
      end
   elsif (0.5..2).include?(y)
      if true 
      puts "Y is between 0.5 & 2"
      else
-     y = y/10
+     y = y/10  # не выполняет именно это действие
      puts y  # не выполняет именно это действие
      end 
   end
-else 
+else
 puts x, y
 end
