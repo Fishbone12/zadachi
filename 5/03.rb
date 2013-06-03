@@ -1,11 +1,9 @@
-def fibonacci(n)
-    if n < 3
-        1
-    else
-        fibonacci(n - 1) + fibonacci(n - 2)
-    end
+puts "Give me N"
+n = gets.chomp.to_f
+def fib(n)
+  n < 2 ? n : fib(n-1) + fib(n-2)
 end
-
+puts fib(n)
 =begin
 С помощью цикла «пока» или цикла «до» написать программу
 вычисления числа Фибоначчи, не превосходящего заранее заданное
@@ -13,3 +11,5 @@ end
 Числа Фибоначчи вычисляются с помощью следующих соотношений:
 F0 = 0; F1 = 1; Fi = Fi −1 + Fi − 2 для i > 1.
 =end
+
+
