@@ -9,3 +9,7 @@ when 5 then puts "Wouwov"
 else
 puts "Wrong ID, try again."
 end
+=begin
+Написать программу, которая по введенному номеру выводит
+фамилию студента вашей группы.
+=end

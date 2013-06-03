@@ -9,3 +9,8 @@ puts "Triangle is possible"
 else
 puts "Impossible to built the triangle"
 end
+
+=begin
+Даны действительные положительные числа X, Y, Z. Выяснить,
+существует ли треугольник с длинами сторон X, Y, Z.
+=end

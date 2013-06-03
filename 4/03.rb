@@ -9,3 +9,8 @@ when 5 then puts "VERY GOOD"
 else
 puts "Dude, who U are? Dumbass or wunderkind ?!!"
 end
+=begin
+Написать программу, позволяющую получить словесное наименование
+школьных оценок. Например, 1 – очень плохо.
+
+=end

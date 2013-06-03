@@ -11,3 +11,8 @@ when 7 then puts "Holliday"
 else
 puts "Dude, there are only 7 days in the week!!!"
 end
+=begin
+По введенному номеру дня недели вывести количество часов занятий в
+вашей группе.
+
+=end

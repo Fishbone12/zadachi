@@ -18,3 +18,8 @@ z=5
   puts "Z is the smallest number" if z<x && z<y
 
   puts "The numbers are equal" if x==y && x==z
+
+=begin
+Даны три действительных числа X, Y, Z. Найти минимальное из этих
+трех чисел.
+=end

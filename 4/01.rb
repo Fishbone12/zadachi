@@ -11,3 +11,7 @@ when 7 then puts "Sunday"
 else
 puts "Dude, there are only 7 days in the week!!!"
 end
+=begin
+По введенному номеру дня недели вывести его словесное
+наименование. Например, 1 – понедельник.
+=end

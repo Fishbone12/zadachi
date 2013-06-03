@@ -16,3 +16,7 @@ when 12 then puts "December"
 else
 puts "Dude, there are only 12 month in the year!!!"
 end
+=begin
+По введенному номеру месяца вывести его словесное наименование.
+Например, 1 – январь.
+=end

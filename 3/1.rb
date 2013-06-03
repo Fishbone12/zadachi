@@ -19,4 +19,6 @@ z=5
 
   puts "The numbers are equal" if x==y && x==z
 
-
+=begin Даны три действительных числа X, Y, Z. Найти максимальное из этих
+трех чисел.
+=end

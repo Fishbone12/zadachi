@@ -22,3 +22,7 @@ puts x!=y ? nil : "Numbers are equal"
     puts "X is smaller number"
     end
   end
+=begin
+Даны два действительные числа X, Y ( X ≠ Y ). Найти большее из
+них, если X отрицательное число, и меньшее, если это не так.
+=end

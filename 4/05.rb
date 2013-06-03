@@ -11,3 +11,7 @@ when 7 then puts "B"
 else
 puts "Dude, it`s only 7 notes exist!!"
 end
+=begin
+По введенному номеру музыкальной ноты вывести ее словесное
+наименование. Например, 3 – ми.
+=end
