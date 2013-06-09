@@ -1,16 +1,16 @@
 puts "Give me a number"
-n = gets.chomp.to_i
-i= (1..n)
+n = gets.chomp
 a, b =3, 2
 result = []
-for i in (1..n) do
+for n in (1..n) do
+i = (1..n)
 z = i**3-17*i*n**2+n**3
-puts (z.div 3 ==0) && (z.div 2 !=0) ? result << z : nil
 end
+puts (z.div 3 ==0) && (z.div 2 !=0) ? result << z : nil
 puts result
 =begin
 Написать программу, выясняющую, есть ли среди чисел
-i**3-17in**2+n**3,i=1,...,n
+i**3-17*i*n**2+n**3,i=1,...,n
 числа кратные заданному числу A и одновременно не кратные
 заданному числу B.
 Вывести найденные числа на печать.
