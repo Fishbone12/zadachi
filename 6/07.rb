@@ -4,7 +4,7 @@ n = gets.chomp.to_f
 i= (1..n)
 for i in (1..n) do
 a = cos(i**3) * sin(i*n)
-puts a<0.0001 ? a : nil
+ a<0.0001 ? puts a : nil
 end
 =begin
 Написать программу, выясняющую, есть ли среди чисел:
