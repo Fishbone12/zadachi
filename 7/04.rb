@@ -11,4 +11,4 @@ puts result.select{|elem| elem == 0} ? "The first zero-element index is " + resu
 В массиве из 15 чисел найти индекс первого нулевого элемента.
 =end
 
-#не работает почему то false
+#не работает почему-то false
